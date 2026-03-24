@@ -48,7 +48,8 @@ select count(*) from aluno;
     group by status ;
     
     #Mostre o nome e a idade de todos os alunos 
-    select nome,timestampdiff()year,nascimento,curdate()) as idade from aluno.
+    select nome,timestampdiff()year,nascimento,curdate()) as idade from aluno;
+    
         
     
     

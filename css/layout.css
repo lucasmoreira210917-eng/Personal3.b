@@ -23,6 +23,7 @@
     --padding-padrao: 40px;
     --padding-sessao: 80px;
     --gap-padrao: 25px;
+    --altura-menu:80px;
 
 
     /*bordas*/
@@ -52,6 +53,7 @@ body {
 
 
 .menu {
+    height: var(--altura-menu);
     position: sticky;
     TOP: 0;
     background-color: var(--bg-cor-escura);
@@ -106,7 +108,10 @@ body {
 
 
 .page-title-full {
-    height: 100vh;
+    height: calc(100vh - var(--altura-menu));
+    background-image: url(..);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page-title h1 {
@@ -267,6 +272,14 @@ body {
     /*Responsividade (adaptar as telas )*/
 
     /*Desktop grande ou tv*/
+
+@media ( min-width: 1200px){
+    .sessao{
+        width: 1200px;
+        
+        margin: 0 auto ;
+    }
+}
 
     /* tablet ate 1024px*/
 
