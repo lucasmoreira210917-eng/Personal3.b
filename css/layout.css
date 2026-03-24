@@ -109,7 +109,7 @@ body {
 
 .page-title-full {
     height: calc(100vh - var(--altura-menu));
-    background-image: url(..);
+    background-image: url(../img/Iron\ box.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
